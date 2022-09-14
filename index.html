@@ -13,6 +13,7 @@
 
 <body>
     <header>
+
         <div>
             <img class="logo" alt="logo" src="./src/logo.svg" />
         </div>
@@ -33,21 +34,44 @@
             <a href="#"><img alt="user" src="./src/icons/user (1).svg" /></a>
         </div>
     </header>
+   
     <main>
         <section class="banner">
+            <div id="slider">
+                <img alt="header-1" src="./src/slider/header-1.svg" />
+                <img alt="header-2" src="./src/slider/header-2.svg" />
+                <img alt="header-3" src="./src/slider/header-3.svg" />
+                <img alt="header-4" src="./src/slider/header-4.svg" />
+                <h1 class="banner-tittle">
+                    <div>
+                        <span class="gradient">аренда</span> фото
+                    </div>
+                    <div>
+                        и видео
+                    </div>
+                    <div>
+                        оборудования
+                    </div>
+    
+                </h1>
+            </div>
+            <script>
 
-            <h1 class="banner-tittle">
-                <div>
-                    <span class="gradient">аренда</span> фото
-                </div>
-                <div>
-                    и видео
-                </div>
-                <div>
-                    оборудования
-                </div>
+                const slideDelay = 3000;
+                const dynamicSlider = document.getElementById("slider");
 
-            </h1>
+                var curSlide = 0;
+                window.setInterval(() => {
+                    curSlide++;
+                    if (curSlide === dynamicSlider.childElementCount) {
+                        curSlide = 0;
+                    }
+
+                    dynamicSlider.firstElementChild.style.setProperty("margin-left", "-" + curSlide + "00%");
+                }, slideDelay);
+
+            </script>
+       
         </section>
         <div class="features-bg">
             <section class="features">

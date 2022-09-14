@@ -60,8 +60,7 @@ main {
 }
 .banner {
   position: relative;
-  background-image: url("./src/header.svg");
-  background-size: cover;
+  
   height: 650px;
   display: flex;
   align-items: flex-end;
@@ -85,8 +84,8 @@ p {
   position: relative;
   font-size: 30px;
   font-weight: bold;
-  margin-left: 135px;
-  margin-bottom: 50px;
+  left: 135px;
+  bottom: 250px;
   z-index: 1;
 }
 .gradient {
@@ -260,4 +259,34 @@ p {
   width: 260px;
   height: 50px;
   text-transform: uppercase;
+}
+
+#slider {
+  width: 100%;
+  height: 100%;
+
+  margin: 0 auto;
+  border: 10px solid transparent;
+  padding: 0px;
+
+  z-index: 100;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+#slider > img {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 15px;
+  font-size: initial;
+  line-height: normal;
+  transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1); /* Slide css animation */
+  background-size: cover;
+  vertical-align: top;
+  box-sizing: border-box;
+  white-space: normal;
 }
