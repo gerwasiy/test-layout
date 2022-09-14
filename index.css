@@ -67,7 +67,7 @@ main {
   z-index: 0;
 }
 
-h1,
+
 h2 {
   text-transform: uppercase;
 }
@@ -87,6 +87,7 @@ p {
   left: 135px;
   bottom: 250px;
   z-index: 1;
+  text-transform: uppercase;
 }
 .gradient {
   background: linear-gradient(to right, #4f9c2c, #8ee901);
