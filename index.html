@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="desktop">
 
         <div>
             <img class="logo" alt="logo" src="./src/logo.svg" />
@@ -34,71 +34,67 @@
             <a href="#"><img alt="user" src="./src/icons/user (1).svg" /></a>
         </div>
     </header>
+    <header class="header-mobile">
+<div class="header-left-menu">
+    <a href="#"><img alt="star" src="./src/icons/star.svg" /></a>
+    <a href="#"><img alt="compare" src="./src/icons/compare.svg" /></a>
+    <a href="#"><img alt="shopping-cart" src="./src/icons/shopping-cart.svg" /></a>
+</div>
+<div class="mobile-logo">
+<img alt="logo" src="./src/mobile-logo.svg"/>
+</div>
+<div class="header-right-menu">
+    <a href="#"><img alt="search" src="./src/icons/search (1).svg" /></a>
+    <a href="#"><img alt="user" src="./src/icons/user (1).svg" /></a>
+    <div class="burger-menu">
+        <input type="checkbox" id="burger">
+        <label for="burger"></label>
+        <nav>
+            <a href="#">каталог</a>
+            <a href="#">о компании</a>
+            <a href="#">правила</a>
+            <a href="#">новости</a>
+            <a href="#">контакты</a>
+        </nav>
+    </div>
+</div>
+    </header>
    
     <main>
         <section class="banner">
             <div id="slider">
-                <div>
+                <div class="slide header-1">
                     <img alt="header-1" src="./src/slider/header-1.svg" />
-                    <div class="banner-tittle">
-                        <div>
-                            <span class="gradient">аренда</span> фото
-                        </div>
-                        <div>
-                            и видео
-                        </div>
-                        <div>
-                            оборудования
-                        </div>
-                    </div>
+                   
                 </div>
-                <div>
+                <div class="slide header-2">
                     <img alt="header-2" src="./src/slider/header-2.svg" />
-                    <div class="banner-tittle">
-                        <div>
-                            <span class="gradient">аренда</span> фото
-                        </div>
-                        <div>
-                            и видео
-                        </div>
-                        <div>
-                            оборудования
-                        </div>
-                    </div>
+                    
                 </div>
-                <div>
+                <div  class="slide header-3">
                     <img alt="header-3" src="./src/slider/header-3.svg" />
-                    <div class="banner-tittle">
-                        <div>
-                            <span class="gradient">аренда</span> фото
-                        </div>
-                        <div>
-                            и видео
-                        </div>
-                        <div>
-                            оборудования
-                        </div>
-                    </div>
+                   
                 </div>
-                <div>
+                <div  class="slide header-4">
                     <img alt="header-4" src="./src/slider/header-4.svg" />
-                    <div class="banner-tittle">
-                        <div>
-                            <span class="gradient">аренда</span> фото
-                        </div>
-                        <div>
-                            и видео
-                        </div>
-                        <div>
-                            оборудования
-                        </div>
-                    </div>
+                   
                 </div>
-                
+             
        
               
             </div>
-            
+            <div class="banner-tittle">
+                <div class="desktop">
+                    <span class="gradient">аренда</span> фото
+                </div>
+                <div class="desktop">
+                    и видео
+                </div>
+                <div class="mobile">Аренда фото и видео</div>
+                <div>
+                    оборудования
+                </div>
+            </div>
             <script>
 
                 const slideDelay = 3000;
